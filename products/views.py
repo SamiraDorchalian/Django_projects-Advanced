@@ -11,3 +11,11 @@ class ProductListView(generic.ListView):
     # def get_queryset(self):
     #     pass
 
+
+class ProductDetailView(generic.DetailView):
+    model = Product
+    template_name = 'products/product_detail.html'
+    context_object_name = 'product'
+
+
+
