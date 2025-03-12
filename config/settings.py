@@ -48,7 +48,7 @@ INSTALLED_APPS = [
 
     # third party apps
     'crispy_forms',
-    'crispy_bootstrap5',  # Forgetting this was probably your error
+    'crispy_bootstrap4',  # Forgetting this was probably your error
     'allauth',
     'allauth.account',
 
@@ -187,5 +187,5 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 
 # crispy form settings
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
-CRISPY_TEMPLATE_PACK = "bootstrap5"
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
