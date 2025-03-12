@@ -2,6 +2,7 @@ from django.contrib import admin
 
 from .models import Product, Comment
 
+# Internationalization or i18n
 
 class CommentsInline(admin.TabularInline):
     model = Comment
