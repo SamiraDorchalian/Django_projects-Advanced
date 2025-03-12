@@ -202,3 +202,9 @@ ACCOUNT_UNIQUE_EMAIL = True
 # crispy form settings
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+from django.contrib.messages import constants as messages_constants
+# For messages framework
+MESSAGE_TAGS = {
+    messages_constants.ERROR: 'danger',
+}
