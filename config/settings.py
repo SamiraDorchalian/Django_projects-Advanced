@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'crispy_bootstrap4',  # Forgetting this was probably your error
     'allauth',
     'allauth.account',
+    'rosetta',
 
     # local apps
     'accounts.apps.AccountsConfig',
@@ -155,6 +156,16 @@ SOCIALACCOUNT_PROVIDERS = {
 
 # LANGUAGE_CODE = 'en-us'
 LANGUAGE_CODE = 'fa'
+
+LANGUAGES = (
+    ('en', 'English'),
+    ('fa', 'Persion'),
+    ('ko', 'Koean')
+)
+
+LOCALE_PATHS = (
+'templates/locale',
+)
 
 # TIME_ZONE = 'UTC'
 TIME_ZONE = 'Asia/Tehran'
