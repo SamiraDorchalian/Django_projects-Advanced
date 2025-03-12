@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-12 17:53+0330\n"
+"POT-Creation-Date: 2025-03-12 18:09+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,18 +16,49 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\templates\products\product_detail.html:28
+#, fuzzy
+#| msgid "Product Description"
+msgid "Product details of"
+msgstr "توضیحات محصول"
+
+#: .\templates\products\product_detail.html:53
+msgid "$"
+msgstr "تومان"
+
 #: .\templates\products\product_detail.html:66
 msgid "Add to Cart"
-msgstr ""
+msgstr "اضافه به سبد خرید"
+
+#: .\templates\products\product_detail.html:70
+msgid "Categories"
+msgstr "دسته بندی ها"
+
+#: .\templates\products\product_detail.html:71
+msgid "Clothes"
+msgstr "لباس ها"
+
+#: .\templates\products\product_detail.html:72
+msgid "Summer"
+msgstr "تابستون"
+
+#: .\templates\products\product_detail.html:73
+msgid "Warm"
+msgstr "گرم"
+
+#: .\templates\products\product_detail.html:74
+msgid "Womanly"
+msgstr "زنانه"
 
 #: .\templates\products\product_detail.html:86
 msgid "Product Description"
-msgstr ""
+msgstr "توضیحات محصول"
 
 #: .\templates\products\product_detail.html:168
 msgid "Write your comment"
-msgstr ""
+msgstr "نظر خود را بنویسید"
 
 #: .\templates\products\product_detail.html:174
 msgid "Submit"
-msgstr ""
+msgstr "ارسال"
