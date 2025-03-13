@@ -10,12 +10,12 @@ from .models import Product, Comment
 from .forms import CommentForm
 
 
-def test_translation(request):
-    result = _('Hello')
-    messages.success(request, 'This is a success message.')
-    messages.warning(request, 'This is a warning message.')
-    messages.error(request, 'This is a error message.')
-    return render(request, 'products/testhello.html')
+# def test_translation(request):
+#     result = _('Hello')
+#     messages.success(request, 'This is a success message.')
+#     messages.warning(request, 'This is a warning message.')
+#     messages.error(request, 'This is a error message.')
+#     return render(request, 'products/testhello.html')
 
 class ProductListView(generic.ListView):
     # model = Product
