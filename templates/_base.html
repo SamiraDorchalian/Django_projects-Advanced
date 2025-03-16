@@ -98,19 +98,19 @@
                             </a>
                             <ul class="user-info-menu">
                                 {% if user.is_authenticated %}
-                                <li>
-                                    <a class="text-right" href="{% url 'account_logout' %}">{% trans 'Logout' %}</a>
-                                </li>
-                                <li>
-                                    <a class="text-right" href="profile.html">{% translate 'Profile' %}</a>
-                                </li>
+                                    <li>
+                                        <a class="text-right" href="{% url 'account_logout' %}">{% trans 'Logout' %}</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-right" href="profile.html">{% translate 'Profile' %}</a>
+                                    </li>
                                 {% else %}
-                                <li>
-                                    <a class="text-right" href="{% url 'account_login' %}">{% translate 'Login' %}</a>
-                                </li>
-                                <li>
-                                    <a class="text-right" href="{% url 'account_signup' %}">{% translate 'Signup' %}</a>
-                                </li>
+                                    <li>
+                                        <a class="text-right" href="{% url 'account_login' %}">{% translate 'Login' %}</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-right" href="{% url 'account_signup' %}">{% translate 'Signup' %}</a>
+                                    </li>
                                 {% endif %}
                             </ul>
                         </li>
@@ -133,11 +133,11 @@
 <!-- Header End -->
 
 {% if messages %}
-    <div class="container">
-        {% for message in messages %}
-            <div class="alert alert-{{ message.tags }}">{{ message }}</div>
-        {% endfor %}
-    </div>
+<div class="container">
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+    {% endfor %}
+</div>
 <!--    <ul class="messages">-->
 <!--        {% for message in messages %}-->
 <!--            <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>-->
@@ -150,6 +150,34 @@
 {% block content %}
 
 {% endblock content %}
+
+<!-- Footer Start-->
+<footer class="footer">
+    <div class="footer-top bg-color ptb--50" data-bg-color="#f6f6f6">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <div class="footer-widget mb--50">
+                        <div class="textwidget">
+                            <img src="assets/img/codingyar_logo.png" alt="Logo">
+                        </div>
+                    </div>
+                    <div class="footer-widget mb--50 pb--1">
+                        <ul class="footer-menu">
+                            <li><a href="https://www.linkedin.com/in/samira-dorchalian-a61789219/">درباره ما</a></li>
+                            <li><a href="https://github.com/SamiraDorchalian">قوانین و مقررات</a></li>
+                            <li><a href="https://www.linkedin.com/in/samira-dorchalian-a61789219/">تماس با ما</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <a href="https://github.com/SamiraDorchalian">GitHub</a> | <a href="https://www.linkedin.com/in/samira-dorchalian-a61789219/">Linkedin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End-->
 
 <!-- ************************* JS Files ************************* -->
 
