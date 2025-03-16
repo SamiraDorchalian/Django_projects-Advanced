@@ -14,6 +14,7 @@
                 <div class="col-lg-8 mb-md--50">
                     <div class="row no-gutters">
                         <div class="col-12">
+                            {% if cart %}
                             <div class="table-content table-responsive">
                                 <table class="table text-center">
                                     <thead>
@@ -54,7 +55,8 @@
                                                     </span>
                                         </td>
                                         <td class="product-quantity">
-                                            <form class="d-flex" action="{% url 'cart:cart_add' item.product_obj.id %}" method="post">
+                                            <form class="d-flex" action="{% url 'cart:cart_add' item.product_obj.id %}"
+                                                  method="post">
                                                 {% csrf_token %}
                                                 <div class="quantity">
                                                     <input
@@ -68,19 +70,24 @@
                                                 </div>
 
                                                 {{ item.product_update_quantity_form.inplace }}
-                                                <button class="small" type="submit"><i class="fa fa-refresh"></i></button>
+                                                <button class="small" type="submit"><i class="fa fa-refresh"></i>
+                                                </button>
                                             </form>
                                         </td>
                                         <td class="product-total-price">
-                                                    <span class="money">
-                                                        <a href="product-details.html">{{ item.product_obj.price}} تومان</a>
-                                                    </span>
+                                            <span class="product-price-wrapper">
+                                                <span class="money">{{ item.total_price }}</span>
+                                            </span>
                                         </td>
                                     </tr>
                                     {% endfor %}
                                     </tbody>
                                 </table>
                             </div>
+                            {% else %}
+                                <p>{% trans 'Cart is Empty! Please add some products to the cart' %}</p>
+                                <a href="{% url 'product_list' %}">{% trans 'Go shopping' %}</a>
+                            {% endif %}
                         </div>
                     </div>
                     <div class="row no-gutters border-top pt--20 mt--20">
@@ -94,21 +101,21 @@
                         <div class="cart-totals">
                             <h5 class="font-size-14 font-bold mb--15">مجموع</h5>
                             <div class="cart-calculator">
-                                <div class="cart-calculator__item">
-                                    <div class="cart-calculator__item--head">
-                                        <span>مجموع</span>
-                                    </div>
-                                    <div class="cart-calculator__item--value">
-                                        <span>۳۴۶,۰۰۰ تومان</span>
-                                    </div>
-                                </div>
+                                <!--                                <div class="cart-calculator__item">-->
+                                <!--                                    <div class="cart-calculator__item&#45;&#45;head">-->
+                                <!--                                        <span>مجموع</span>-->
+                                <!--                                    </div>-->
+                                <!--                                    <div class="cart-calculator__item&#45;&#45;value">-->
+                                <!--                                        <span>۳۴۶,۰۰۰ تومان</span>-->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
                                 <div class="cart-calculator__item order-total">
                                     <div class="cart-calculator__item--head">
                                         <span>جمع کل</span>
                                     </div>
                                     <div class="cart-calculator__item--value">
                                                 <span class="product-price-wrapper">
-                                                    <span class="money">۳۴۶,۰۰۰ تومان</span>
+                                                    <span class="money">{{ cart.get_total_price }} تومان</span>
                                                 </span>
                                     </div>
                                 </div>
