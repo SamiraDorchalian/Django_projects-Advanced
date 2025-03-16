@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-16 13:10+0330\n"
-"PO-Revision-Date: 2025-03-16 13:11+0330\n"
+"POT-Creation-Date: 2025-03-16 14:33+0330\n"
+"PO-Revision-Date: 2025-03-16 14:34+0330\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -100,6 +100,22 @@ msgstr "نظر خود را بنویسید"
 #: .\templates\products\product_detail.html:199
 msgid "Login"
 msgstr "ورود"
+
+#: .\templates\products\product_detail.html:237
+msgid "Cart"
+msgstr "سبد خرید"
+
+#: .\templates\products\product_detail.html:263
+msgid "Total"
+msgstr "مجموع"
+
+#: .\templates\products\product_detail.html:267
+msgid "Go to cart"
+msgstr "برو به فروشگاه"
+
+#: .\templates\products\product_detail.html:268
+msgid "Checkout"
+msgstr "تسویه حساب"
 
 #: .\views.py:58
 msgid "Comment successfully created"
