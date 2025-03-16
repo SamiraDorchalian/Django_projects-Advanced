@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-16 12:20+0330\n"
+"POT-Creation-Date: 2025-03-16 15:58+0330\n"
 "PO-Revision-Date: 2025-03-16 12:26+0330\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,10 +26,30 @@ msgstr "محصول با موفقیت به سبد خرید اضافه شد."
 msgid "Product successfully removed from cart"
 msgstr "محصول با موفقیت از سبد خرید شما حذف شد."
 
-#: .\templates\cart\cart_detail.html:88
+#: .\templates\cart\cart_detail.html:9 .\templates\cart\cart_sidebar.html:8
+msgid "Cart"
+msgstr "سبد خرید"
+
+#: .\templates\cart\cart_detail.html:91
 msgid "Cart is Empty! Please add some products to the cart"
 msgstr "سبد خرید شما خالی است! تعدادی کالا به سبد خرید اضافه کنید."
 
-#: .\templates\cart\cart_detail.html:89
+#: .\templates\cart\cart_detail.html:92
 msgid "Go shopping"
 msgstr "رفتن به فروشگاه"
+
+#: .\templates\cart\cart_sidebar.html:33
+msgid "Total"
+msgstr "مجموع"
+
+#: .\templates\cart\cart_sidebar.html:34
+msgid "$"
+msgstr "تومان"
+
+#: .\templates\cart\cart_sidebar.html:38
+msgid "Go to cart"
+msgstr "برو به فروشگاه"
+
+#: .\templates\cart\cart_sidebar.html:40
+msgid "Checkout"
+msgstr "تسویه حساب"
